@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>Login | Data Security</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='login.css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+        <link rel="icon" type="image/png" sizes="32x32" href="../imagens/favicon-32x32.png">
+    </head>
+    <body>
+        <div class="container">
+                <img src="../imagens/logo.png">
+                <h2>Bem-vindo!</h2> 
+                <form action="../autenticacao.php" method="POST" autocomplete="off">
+                <div class="login">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" autocomplete="off">
+                </div>
+                <div class="login">
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" autocomplete="off">
+                </div>
+                <div class="botao">
+                    <button type="submit">Logar</button>
+                </div>
+                <p>Não possui uma conta? <a href="../cadastro/cadastro.php">Cadastre-se!</a></p>
+            </form>
+        </div>
+    </body>
+</html>
